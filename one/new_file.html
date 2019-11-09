@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+       function deal() {
+           
+           var v1 = document.getElementById("input_1").value;
+           document.getElementById("input_2").value = v1.toLowerCase();
+       }
+       function deal2() {
+           var v1 = document.getElementById("input_1").value;
+           document.getElementById("input_2").value = v1.toUpperCase();
+       }
+       
+    </script>
+</head>
+<body>
+<form>
+    <h3>大小写转换</h3>
+    原数据：<input type="text" id="input_1"><br/>
+    操作：<input type="button" id="btn_1" onclick="deal()" value="转小写">
+            <input type="button" id="btn_2" onclick="deal2()" value="转大写"><br/>
+    新数据:<input type="text" id="input_2">
+    
+    <button></button>
+</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function caic(type) {
+            var v1 = document.getElementById("input_1").value;
+            var v2 = document.getElementById("input_2").value;
+            if (isNaN(v1) || isNaN(v2)) {
+                alert("格式非法");
+                return;
+
+            } else {
+                switch (type) {
+                    case 1:
+                        document.getElementById("input_3").value = Number(v1) + Number(v2);
+                        break;
+                    case 2:
+                        document.getElementById("input_3").value = Number(v1) - Number(v2);
+                        break;
+                    case 3:
+                        document.getElementById("input_3").value = Number(v1) * Number(v2);
+                        break;
+                    case 4:
+                        document.getElementById("input_3").value = Number(v1) / Number(v2);
+                        break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+第一个：<input type="text" id="input_1">
+<br>
+第二个：<input type="text" id="input_2">
+<br>
+操作：<input type="button" id="btn_1" onclick="caic(1)" value="+">
+<input type="button" id="btn_2" onclick="caic(2)" value="-">
+<input type="button" id="btn_3" onclick="caic(3)" value="*">
+<input type="button" id="btn_4" onclick="caic(4)" value="/">
+<br>
+<p>结果:<input type="text" id="input_3"></p>
+</body>
+</html>
