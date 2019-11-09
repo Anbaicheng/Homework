@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自加</title>
+    <style>
+            body {
+                text-align: center;
+            }
+            p,#ipt,#btn {
+                font-size: 50px;
+            }
+            #ipt {
+                width: 100px;
+                margin-bottom: 10px;
+            }
+            #ipt,#btn {
+                height: 100px;
+                padding: 0px 20px;
+            }
+        </style>
+        <script>
+           function numPlus() {
+                var p = document.getElementById('num');
+                p.innerHTML++;
+           }
+        </script>
+</head>
+<body>
+        <span id="num">0</span>
+        <input type="button" id="btn" value="click +1" onclick="numPlus()" />
+</body>
+</html>

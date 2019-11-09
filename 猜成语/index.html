@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<p align="center" style="font-size: 25px;">联谊会小游戏</p>
+	<hr>
+<meta charset="utf-8">
+<title>猜成语</title>
+</head>
+
+	<style>
+		span{ color: greenyellow;  font-size: 70px		}
+		body{background: url(img/1.jpg);}
+	</style>
+	
+	<script type="text/javascript" src="js/idiom.js"></script>
+	<script type="text/javascript" src="js/mark.js"></script>
+	<script type="text/javascript" src="js/time.js""></script>
+	
+<body>
+	<div style="font-size: 50px; text-align: center;" > 倒计时: &nbsp
+		<span >0</span> <span>0</span> <span>0</span>  &nbsp 秒
+	</div>
+	
+	<button id="start" onClick="time()" style="margin-left: 710px; size: 60px; height: 60px; width: 100px;">开始</button>
+	<button id="refresh" onclick="window.location.reload()" style="height: 30px; width: 80px; margin-left: 400px;"> 重启游戏</button>
+	
+  <div style="height: 350px; font-size: 200px;margin-top: 30px; ">
+<span id="checkText" class="text" onclick="createText(1)" style="color: black; font-size: 230px; border: 1px solid red;">成语切换 </span>
+	<span  style="font-size: 100px; color: black;">得分</span>
+	<span id="num" style="font-size: 120px; color: red;">0</span>
+	</div>
+	
+	<div align="center">
+	<button onclick="createText(1),numPlus()" style="font-size: 50px; height: 100px; width: 180px;">得分+1</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button onclick="createText(1)" onclick="fun(1)" style="font-size: 50px; height: 100px; width: 180px;">过</button>
+	</div>
+	
+</body>
+
+
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div ></div>
+	</body>
+	<script>
+		window.onload=function(){
+			createText(1);
+		}
+		function createText(length){
+			var text=" ";
+			var textLength= parseInt(length);
+			var checkText=document.getElementById("checkText")
+	
+		var text1=new Array('千军万马','安居乐业','东山再起','一事无成','一心一意',
+		'春暖花去','鸟语花香','山清水秀','水深火热','天罗地网','助人为乐','人来人往',
+		'人山人海','十全十美','诗情画意','井井有条','乐极生悲','百发百中','无力回天',
+		'坐井观天','顶天立地','青山绿水','一表人才','非亲非故','美中不足','火烧眉毛',
+		'答非所问','先来后到','名胜古迹','画龙点睛','川流不息','井底之蛙','惊涛骇浪',
+		'一鸣惊人','单刀直入','不约而同','雨过天晴','脱口而出','出尔反尔','漫不经心',
+		'日积月累','另眼相看','举世闻名','四海为家','大题小做','轰轰烈烈','弱肉强食',
+		'九牛一毛','指手画脚','七上八下','天高云淡','千家万户','自始至终','鹅毛大雪',
+		'千秋万代','大显身手','无边无际','天寒地冻','省吃俭用','焦头烂额','枝繁叶茂',
+		'刨根问底','狐假虎威',);
+		for (var i=0; i<textLength;i++){
+			var charNum=Math.floor(Math.random()*63);
+			text+=text1[charNum];
+		}
+		if(checkText){
+			checkText.className="text";
+			checkText.innerHTML=text;
+		}
+			}
+	</script>
+</html>

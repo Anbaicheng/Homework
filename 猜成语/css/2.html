@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+<body>
+
+<input type=button value="切换背景色" onclick="ChangeBackColor();" />
+
+<script>
+
+var flag=false;
+
+function ChangeBackColor(){
+
+    if(flag){
+
+        document.body.style.backgroundColor="red";
+
+    }else{
+
+        document.body.style.backgroundColor="yellow";
+
+    }
+
+    flag=!flag;
+
+}
+
+</script>
+
+</body>
+</html>
