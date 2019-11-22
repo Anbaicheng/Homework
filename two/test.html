@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>图片放大</title>
+</head>
+<style type="text/css">
+	.main_div{
+		margin: 20px auto;
+		text-align: center;
+
+	}
+	.pic_div{
+		position: relative;
+		background-color: pink;
+		border: 1px dotted red;
+		margin: 10px auto;
+		width: 800px;
+		height: 600px;
+	}
+	img{
+		width: 600px;
+		height: 400px;
+	}
+
+</style>
+<script type="text/javascript">
+	function bigit(){
+		var image=document.getElementsByClassName("pic")[0];
+		image.style.height=image.height*1.1+'px';
+		image.style.width=image.width*1.1+'px';
+	}
+	function littleit(){
+		var image=document.getElementsByClassName("pic")[0];
+		image.style.height=image.height/1.1+'px';
+		image.style.width=image.width/1.1+'px';
+	}
+</script>
+<body>
+	<div  style="" class="main_div">
+		<p>图片在一个区域里放大缩小</p>
+		<button onclick="bigit()">图片放大</button>&nbsp;&nbsp;<button onclick="littleit()">图片缩小</button>
+		<div class="pic_div">
+			<img src="img/精灵图习题.PNG" class="pic">
+		</div>
+	</div>
+
+</body>
+</html>

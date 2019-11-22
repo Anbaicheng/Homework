@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		var box=document.getElementById('box');
+		var i=0;
+		box.onclick=function(){
+			++i;
+			if(i%2){
+				this.style.width='200px';
+				this.style.height='200px';
+				this.style.backgroundColor="#ee3060";
+				this.innerHTML="大";
+			}
+			else{
+				this.style.width='50px';
+				this.style.height='50px';
+				this.style.backgroundColor="blue";
+				this.innerHTML="小"
+			}
+		};
+	</script>
+	<body>
+		
+		<div id="box" class="box" style="background: #FF0000;">
+			
+		</div>
+	</body>
+</html>

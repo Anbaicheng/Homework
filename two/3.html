@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/angular.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+<!-- 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js" ></script> -->
+		<script type="text/javascript" src="js/3.js"></script>
+		<link rel="stylesheet" href="css/3.css" />
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		<div id="Box">
+			<h1>我的购物车</h1>
+			<div id="dataDiv" ng-show="isdataShow">
+				<button id="deleteAll" ng-click="deleteall()">清空购物车</button>
+				<table id="dataTable" ng-show="istableShow" border="1px" cellpadding="0" cellspacing="0">
+					<thead>
+						<tr>
+							<td><input type="checkbox" ng-click="checkedall()"/></td>
+							<td>商品</td>
+							<td>单价</td>
+							<td>数量</td>
+							<td>小计</td>
+							<td>操作</td>
+						</tr>
+					</thead>
+					
+					<tbody ng-repeat="x in datas">
+						<tr>
+							<td><input type="checkbox"/></td>
+							<td>{{x.name}}</td>
+							<td>{{x.price}}</td>
+							<td><button ng-click="reduce(x.id)">-</button><input type="text" value="{{x.gnumber}}"/><button ng-click="increase(x.id)">+</button></td>
+							<td>{{x.totalprice=x.price*x.gnumber}}</td>
+							<td><button ng-click="deleteone(x.id)" class="deleteOne">删除</button></td>
+						</tr>
+					</tbody>
+				</table>
+				<span id="countPrice">总价为: ¥ {{count()}}</span>
+
+		
+	
+	</body>
+</html>
+
