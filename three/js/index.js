@@ -35,7 +35,8 @@ function init() {
     container.addChild(heart);
   }
 
-  var text = new createjs.Text("drink\nresponsibly!", "bold 64px 'Irish Grover'", "#020");
+  var text = new createjs.Text("四叶草绽开了清浅的四瓣希望,眸中倒映着你清澈的笑容,我的人生只是一条线,转身只是因为遇见...",
+	 "bold 30px 'Irish Grover'", "#020");
   text.textAlign = "center";
   text.x = w / 2;
   text.y = h / 2 - text.getMeasuredLineHeight();
