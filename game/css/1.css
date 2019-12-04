@@ -1,0 +1,107 @@
+.games {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.games .left,
+.games .right {
+	float: left;
+	text-align: center;
+	width: 50%;
+}
+
+.games .left .imgwrap,
+.games .right .imgwrap {
+	width: 75%;
+	height: 337px;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #dda0dd;
+	margin: 0 auto;
+}
+
+.games .left .imgwrap img,
+.games .right .imgwrap img {
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.games h2 {
+	text-align: center;
+}
+
+.games .btnwrap {
+	text-align: center;
+}
+
+.games .btnwrap button {
+	position: absolute;
+	width: 20px;
+	height: 180px;
+	color: #fff;
+	background: #dda0dd;
+	top: 0;
+	bottom: 0;
+	right: -123px;
+	margin: auto;
+	font-size: 18px;
+}
+
+.games .btnwrap button.disabled {
+	background: #ccc;
+	cursor: default;
+}
+
+.games .person {
+	display: none;
+}
+
+.games .person ul {
+	overflow: hidden;
+}
+
+.games .person ul li {
+	float: left;
+	width: 180px;
+	text-align: center;
+	position: relative;
+	margin: 0 10px;
+	border: 2px solid purple;
+	height: 200px;
+}
+
+.games .person ul li img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.games .box {
+	text-align: center;
+	font-size: 26px;
+}
+
+.add {
+	color: red;
+}
+
+.addtwo {
+	background: green;
+}
+
+.addthree {
+	text-align: center;
+	font-size: 20px;
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bold;
+}
